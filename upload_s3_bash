@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #First, let's define the metadata URL
-METADATA_URL="http://ubuntu@79.125.92.21/latest/meta-data/"
+METADATA_URL="http://79.125.92.21/latest/meta-data/"
 
 #We can start fetching the required instance metadata for this task
 INSTANCE_ID=$(curl -s $METADATA_URL/instance-id)
