@@ -26,4 +26,8 @@ echo "Users with shell access:" >> $OUTPUT_FILE
 echo "$USERS" >> $OUTPUT_FILE
 
 #Finally, we have to define S3 bucket name and upload our output file
-S3_BUCKET="s3
+S3_BUCKET="applicant-task/r2d2"
+aws s3 cp $OUTPUT_FILE s3://$S3_BUCKET/
+
+#We can also add output confirmation
+echo "Instance information saved to $OUTPUT_FILE and uploaded to s3://$S3_BUCKET/"
