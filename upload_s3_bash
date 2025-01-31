@@ -24,3 +24,6 @@ echo "OS Name: $OS_NAME" >> $OUTPUT_FILE
 echo "OS Version: $OS_VERSION" >> $OUTPUT_FILE
 echo "Users with shell access:" >> $OUTPUT_FILE
 echo "$USERS" >> $OUTPUT_FILE
+
+#Finally, we have to define S3 bucket name and upload our output file
+S3_BUCKET="s3
